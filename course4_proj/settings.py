@@ -57,6 +57,12 @@ class Dev(Configuration):
 
   SESSION_COOKIE_SAMESITE = "None"
 
+  # EMAIL Configuration
+  
+  EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+  ADMINS = [('Test', 'test@example.com')]
+
   # Application definition
 
   INSTALLED_APPS = [
